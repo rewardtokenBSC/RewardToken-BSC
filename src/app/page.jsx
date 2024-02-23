@@ -62,7 +62,7 @@ export default function Home() {
         <h2 className="text-white lg:text-[150px] text-[80px] font-[700] lg:w-[45%] md:w-[70%] w-[85%] text-center">
           $RWD
         </h2>
-        <p className="text-white text-opacity-70 text-[20px] font-[400] lg:w-[45%] md:w-[70%] w-[85%] text-center">
+        <p className="text-white  text-[20px] font-[400] lg:w-[45%] md:w-[70%] w-[85%] text-center">
         The most rewarding token on the Binance Smart Chain.
         </p>
 
@@ -72,7 +72,7 @@ export default function Home() {
             disabled
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            className="py-3 bg-black text-white bg-opacity-40 rounded-3xl text-center text-[14px] md:w-[410px] w-[400px]"
+            className="py-3 bg-black text-white rounded-3xl text-center text-[14px] md:w-[410px] w-[400px]"
           />
           <button
             onClick={copyToClipboard}
@@ -84,7 +84,7 @@ export default function Home() {
 
         <div className="flex md:flex-row flex-col  items-center gap-5">
           <div className="py-[1px] px-20 bg-white bg-opacity-40"></div>
-          <p className="text-white text-opacity-70 text-[18px] font-[300]">
+          <p className="text-white  text-[18px] font-[300]">
             Join our community
           </p>
           <div className="py-[1px] px-20 bg-white bg-opacity-40"></div>
