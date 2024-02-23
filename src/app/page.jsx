@@ -38,7 +38,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-[url(/bg.svg)] bg-no-repeat bg-cover"></div>
 
       {/* Navbar */}
-      <div className="flex items-center justify-between px-20 py-2 bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
+      <div className="flex items-center z-[1000] justify-between px-20 py-2 bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
         <img src="/logo.svg" className="h-[50px] w-[50px]" alt="Logo" />
         <button className="bg-white py-2 px-10 rounded-3xl text-black font-medium hover:bg-transparent border hover:border-white hover:text-white">
           Buy Token
