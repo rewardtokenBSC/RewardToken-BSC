@@ -41,15 +41,15 @@ export default function Home() {
       <div className="flex items-center z-[1000] justify-between px-20 py-2 bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
         <img src="/logo.svg" className="h-[50px] w-[50px]" alt="Logo" />
         <button className="bg-white py-2 px-10 rounded-3xl text-black font-medium hover:bg-transparent border hover:border-white hover:text-white">
-          Buy Token
+          Buy token
         </button>
       </div>
 
       <div className="relative flex flex-col md:pt-10 pt-20 gap-10 justify-center w-screen items-center h-screen">
-        <h2 className="text-white lg:text-[50px] md:text-[40px] text-[30px] font-[700] lg:w-[50%] md:w-[70%] w-[85%] text-center">
+        <h2 className="text-white lg:text-[50px] md:text-[40px] text-[30px] font-[700] lg:w-[45%] md:w-[70%] w-[85%] text-center">
           Claim your share in the Reward Token $RWD airdrop!
         </h2>
-        <p className="text-white text-opacity-70 md:text-[18px] text-[14px] font-[400] lg:w-[50%] md:w-[70%] w-[85%] text-center">
+        <p className="text-white text-opacity-70 md:text-[18px] text-[14px] font-[400] lg:w-[45%] md:w-[70%] w-[85%] text-center">
           The most rewarding reflections token on BSC. Participate in the Reward
           Token airdrop by purchasing with BNB on Pancakeswap.{" "}
         </p>
