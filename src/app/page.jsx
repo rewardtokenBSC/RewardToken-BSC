@@ -45,7 +45,7 @@ export default function Home() {
         </button>
       </div>
 
-      <div className="relative flex flex-col md:pt-0 pt-20 gap-10 justify-center w-screen items-center h-screen">
+      <div className="relative flex flex-col md:pt-10 pt-20 gap-10 justify-center w-screen items-center h-screen">
         <h2 className="text-white lg:text-[50px] md:text-[40px] text-[30px] font-[700] lg:w-[50%] md:w-[70%] w-[85%] text-center">
           Claim your share in the Reward Token $RWD airdrop!
         </h2>
@@ -60,7 +60,7 @@ export default function Home() {
             disabled
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            className="p-2 bg-white text-white text-opacity-70 bg-opacity-10 rounded-3xl text-center text-[14px] md:w-[500px] w-[300px]"
+            className="py-3 bg-white text-white text-opacity-70 bg-opacity-10 rounded-3xl text-center text-[14px] md:w-[410px] w-[300px]"
           />
           <button
             onClick={copyToClipboard}
@@ -73,7 +73,7 @@ export default function Home() {
         <div className="flex md:flex-row flex-col  items-center gap-5">
           <div className="py-[1px] px-20 bg-white bg-opacity-40"></div>
           <p className="text-white text-opacity-70 text-[18px] font-[300]">
-            Join Our Community
+            Join our community
           </p>
           <div className="py-[1px] px-20 bg-white bg-opacity-40"></div>
         </div>
