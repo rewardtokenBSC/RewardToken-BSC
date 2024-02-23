@@ -41,7 +41,7 @@ export default function Home() {
       {/* Navbar */}
       <div className="flex items-center z-[1000] justify-between md:px-20 px-8 py-2 bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
         <div className="flex items-center gap-2">
-          <img src="/logo.svg" className="h-[50px] w-[50px]" alt="Logo" />
+          <img src="/logo2.jpg" className="h-[50px] w-[50px]" alt="Logo" />
           <h2 className="text-white font-bold md:text-[25px] text-[14px]">Reward Token</h2>
         </div>
         <Link
@@ -60,7 +60,7 @@ export default function Home() {
         <h2 className="text-white lg:text-[150px] md:text-[80px] text-[50px] font-[700] lg:w-[45%] md:w-[70%] w-[85%] text-center">
           $RWD
         </h2>
-        <p className="text-white text-opacity-70 md:text-[18px] text-[14px] font-[400] lg:w-[45%] md:w-[70%] w-[85%] text-center">
+        <p className="text-white text-opacity-90 md:text-[20px] text-[14px] font-[400] lg:w-[45%] md:w-[70%] w-[85%] text-center">
           The most rewarding reflections token on BSC.
         </p>
 
@@ -70,7 +70,7 @@ export default function Home() {
             disabled
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            className="py-3 bg-white text-white text-opacity-70 bg-opacity-10 rounded-3xl text-center text-[14px] md:w-[410px] w-[300px]"
+            className="py-3 bg-white text-white bg-opacity-10 rounded-3xl text-center text-[14px] md:w-[410px] w-[300px]"
           />
           <button
             onClick={copyToClipboard}
