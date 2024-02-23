@@ -62,7 +62,7 @@ export default function Home() {
         <h2 className="text-white lg:text-[150px] text-[80px] font-[700] lg:w-[45%] md:w-[70%] w-[85%] text-center">
           $RWD
         </h2>
-        <p className="text-white  text-[20px] font-[400] lg:w-[45%] md:w-[70%] w-[85%] text-center">
+        <p className="text-white text-opacity-70 text-[20px] font-[400] lg:w-[45%] md:w-[70%] w-[85%] text-center">
         The most rewarding token on the Binance Smart Chain.
         </p>
 
