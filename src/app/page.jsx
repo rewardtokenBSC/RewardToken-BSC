@@ -1,11 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { TbBrandTelegram, TbBrandX } from "react-icons/tb";
 
 export default function Home() {
   const [inputValue, setInputValue] = useState(
-    "0xb9f599ce614Feb2e1BBe58F180F370D05b39344E"
+    "0x048ab6dbfa7444de1d77a4970b6ed19d7495db36"
   );
   const [isCopied, setIsCopied] = useState(false);
 
@@ -38,20 +39,29 @@ export default function Home() {
       <div className="absolute inset-0 bg-[url(/bg.svg)] bg-no-repeat bg-cover"></div>
 
       {/* Navbar */}
-      <div className="flex items-center z-[1000] justify-between px-20 py-2 bg-white bg-opacity-5 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
-        <img src="/logo.svg" className="h-[50px] w-[50px]" alt="Logo" />
-        <button className="bg-white py-2 px-10 rounded-3xl text-black font-medium hover:bg-transparent border hover:border-white hover:text-white">
-          Buy token
-        </button>
+      <div className="flex items-center z-[1000] justify-between px-20 py-2 bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
+        <div className="flex items-center gap-2">
+          <img src="/logo.svg" className="h-[50px] w-[50px]" alt="Logo" />
+          <h2 className="text-white font-bold text-[25px]">Reward Token</h2>
+        </div>
+        <Link
+          target="_blank"
+          href={
+            "https://pancakeswap.finance/swap?outputCurrency=0x048AB6dBfA7444De1d77A4970b6ED19d7495Db36&inputCurrency=BNB"
+          }
+        >
+          <button className="bg-white py-2 px-10 rounded-3xl text-black font-bold text-[18px] hover:bg-transparent border hover:border-white hover:text-white">
+            Buy
+          </button>
+        </Link>
       </div>
 
-      <div className="relative flex flex-col md:pt-10 pt-20 gap-10 justify-center w-screen items-center h-screen">
-        <h2 className="text-white lg:text-[50px] md:text-[40px] text-[30px] font-[700] lg:w-[45%] md:w-[70%] w-[85%] text-center">
-          Claim your share in the Reward Token $RWD airdrop!
+      <div className="relative flex flex-col md:pt-10 pt-20 gap-8 justify-center w-screen items-center h-screen">
+        <h2 className="text-white lg:text-[150px] md:text-[80px] text-[50px] font-[700] lg:w-[45%] md:w-[70%] w-[85%] text-center">
+          $RWD
         </h2>
         <p className="text-white text-opacity-70 md:text-[18px] text-[14px] font-[400] lg:w-[45%] md:w-[70%] w-[85%] text-center">
-          The most rewarding reflections token on BSC. Participate in the Reward
-          Token airdrop by purchasing with BNB on Pancakeswap.{" "}
+          The most rewarding reflections token on BSC.
         </p>
 
         <div className="flex md:flex-row flex-col items-center gap-4">
@@ -82,9 +92,11 @@ export default function Home() {
           <div className="bg-white bg-opacity-10 p-4 rounded-md text-white text-opacity-70 text-[25px]">
             <TbBrandX />
           </div>
-          <div className="bg-white bg-opacity-10 p-4 rounded-md text-white text-opacity-70 text-[25px]">
-            <TbBrandTelegram />
-          </div>
+          <Link target="_blank" href={"https://t.me/rewardtokenBSC"}>
+            <div className="bg-white bg-opacity-10 p-4 rounded-md text-white text-opacity-70 text-[25px]">
+              <TbBrandTelegram />
+            </div>
+          </Link>
         </div>
       </div>
     </div>
