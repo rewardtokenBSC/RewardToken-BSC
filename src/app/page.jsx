@@ -66,7 +66,7 @@ export default function Home() {
         The most rewarding token on the Binance Smart Chain.
         </p>
 
-        <div className="flex md:flex-row flex-col items-center gap-4">
+        <div className="flex z-[1000] md:flex-row flex-col items-center gap-4">
           <input
             type="text"
             disabled
