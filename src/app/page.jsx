@@ -59,11 +59,11 @@ export default function Home() {
       </div>
 
       <div className="relative flex flex-col md:pt-10 pt-20 gap-8 justify-center w-screen items-center h-screen">
-        <h2 className="text-white lg:text-[150px] md:text-[80px] text-[50px] font-[700] lg:w-[45%] md:w-[70%] w-[85%] text-center">
+        <h2 className="text-white lg:text-[150px] text-[80px] font-[700] lg:w-[45%] md:w-[70%] w-[85%] text-center">
           $RWD
         </h2>
-        <p className="text-white text-opacity-70 md:text-[18px] text-[14px] font-[400] lg:w-[45%] md:w-[70%] w-[85%] text-center">
-          The most rewarding reflections token on BSC.
+        <p className="text-white text-opacity-70 text-[20px] font-[400] lg:w-[45%] md:w-[70%] w-[85%] text-center">
+        The most rewarding token on the Binance Smart Chain.
         </p>
 
         <div className="flex md:flex-row flex-col items-center gap-4">
@@ -72,7 +72,7 @@ export default function Home() {
             disabled
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            className="py-3 bg-white text-white bg-opacity-10 rounded-3xl text-center text-[14px] md:w-[410px] w-[300px]"
+            className="py-3 bg-white text-white bg-opacity-10 rounded-3xl text-center text-[14px] md:w-[410px] w-[400px]"
           />
           <button
             onClick={copyToClipboard}
