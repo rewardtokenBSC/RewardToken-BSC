@@ -39,10 +39,10 @@ export default function Home() {
       <div className="absolute inset-0 bg-[url(/bg.svg)] bg-no-repeat bg-cover"></div>
 
       {/* Navbar */}
-      <div className="flex items-center z-[1000] justify-between px-20 py-2 bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
+      <div className="flex items-center z-[1000] justify-between md:px-20 px-8 py-2 bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
         <div className="flex items-center gap-2">
           <img src="/logo.svg" className="h-[50px] w-[50px]" alt="Logo" />
-          <h2 className="text-white font-bold text-[25px]">Reward Token</h2>
+          <h2 className="text-white font-bold md:text-[25px] text-[14px]">Reward Token</h2>
         </div>
         <Link
           target="_blank"
@@ -50,7 +50,7 @@ export default function Home() {
             "https://pancakeswap.finance/swap?outputCurrency=0x048AB6dBfA7444De1d77A4970b6ED19d7495Db36&inputCurrency=BNB"
           }
         >
-          <button className="bg-white py-2 px-10 rounded-3xl text-black font-bold text-[18px] hover:bg-transparent border hover:border-white hover:text-white">
+          <button className="bg-white py-2 md:px-10 px-6 rounded-3xl text-black font-bold md:text-[18px] text-[14px] hover:bg-transparent border hover:border-white hover:text-white">
             Buy
           </button>
         </Link>
