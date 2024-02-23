@@ -42,7 +42,9 @@ export default function Home() {
       <div className="flex items-center z-[1000] justify-between md:px-20 px-8 py-2 bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
         <div className="flex items-center gap-2">
           <img src="/logo2.jpg" className="h-[50px] w-[50px]" alt="Logo" />
-          <h2 className="text-white font-bold md:text-[25px] text-[14px]">Reward Token</h2>
+          <h2 className="text-white font-bold md:text-[25px] text-[14px]">
+            Reward Token
+          </h2>
         </div>
         <Link
           target="_blank"
@@ -89,9 +91,11 @@ export default function Home() {
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="bg-white bg-opacity-10 p-4 rounded-md text-white text-opacity-70 text-[25px]">
-            <TbBrandX />
-          </div>
+          <Link target="_blank" href={"http://x.com/rewardtokenBSC_"}>
+            <div className="bg-white bg-opacity-10 p-4 rounded-md text-white text-opacity-70 text-[25px]">
+              <TbBrandX />
+            </div>
+          </Link>
           <Link target="_blank" href={"https://t.me/rewardtokenBSC"}>
             <div className="bg-white bg-opacity-10 p-4 rounded-md text-white text-opacity-70 text-[25px]">
               <TbBrandTelegram />
