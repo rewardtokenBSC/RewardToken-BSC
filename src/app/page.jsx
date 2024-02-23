@@ -72,7 +72,7 @@ export default function Home() {
             disabled
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            className="py-3 bg-white text-white bg-opacity-10 rounded-3xl text-center text-[14px] md:w-[410px] w-[400px]"
+            className="py-3 bg-black text-white bg-opacity-40 rounded-3xl text-center text-[14px] md:w-[410px] w-[400px]"
           />
           <button
             onClick={copyToClipboard}
