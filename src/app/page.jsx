@@ -62,7 +62,7 @@ export default function Home() {
         <h2 className="text-white lg:text-[150px] md:text-[80px] text-[50px] font-[700] lg:w-[45%] md:w-[70%] w-[85%] text-center">
           $RWD
         </h2>
-        <p className="text-white text-opacity-90 md:text-[20px] text-[14px] font-[400] lg:w-[45%] md:w-[70%] w-[85%] text-center">
+        <p className="text-white text-opacity-70 md:text-[18px] text-[14px] font-[400] lg:w-[45%] md:w-[70%] w-[85%] text-center">
           The most rewarding reflections token on BSC.
         </p>
 
