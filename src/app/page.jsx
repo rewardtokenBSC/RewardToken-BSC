@@ -33,7 +33,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative bg-black overflow-x-hidden md:overflow-y-hidden overflow-y-auto">
+    <div className="relative bg-black overflow-x-hidden md:overflow-y-hidden overflow-y-scroll">
       {/* Background Image */}
       {/* <div className="absolute inset-0 bg-[url(/bg.svg)] bg-no-repeat bg-cover"></div> */}
       <img
@@ -42,7 +42,7 @@ export default function Home() {
         alt=""
       />
       {/* Navbar */}
-      <div className="flex items-center z-[1000] justify-between md:px-20 px-8 py-2 bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
+      <div className="flex items-center z-[1000] justify-between md:px-20 px-8 md:py-2 py-4 bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
         <div className="flex items-center gap-3">
           <img src="/logo2.jpg" className="h-[50px] w-[50px]" alt="Logo" />
           <h2 className="text-white font-bold md:text-[25px] text-[14px]">
@@ -61,7 +61,7 @@ export default function Home() {
         </Link>
       </div>
       <img src="/circle.svg" className="absolute" alt="" />
-      <div className="relative flex flex-col md:pt-10 pt-20 gap-4 justify-center w-screen items-center h-screen">
+      <div className="relative flex flex-col md:pt-10 pt-36 gap-4 justify-center w-screen items-center h-screen">
         <h2 className="text-white lg:text-[150px] text-[80px] font-[700] lg:w-[45%] md:w-[70%] w-[85%] text-center">
           $RWD
         </h2>
@@ -119,7 +119,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="flex md:flex-row flex-col items-center gap-6">
+        <div className="flex md:flex-row flex-col items-center pb-6 gap-6">
           <p className="text-white text-opacity-70 text-[20px]">
             © Reward Token, All right reserved.
           </p>
