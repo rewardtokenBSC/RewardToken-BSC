@@ -35,7 +35,7 @@ export default function Home() {
     <div className="relative bg-black overflow-x-hidden md:overflow-y-hidden overflow-y-auto">
       {/* Background Image */}
       {/* <div className="absolute inset-0 bg-[url(/bg.svg)] bg-no-repeat bg-cover"></div> */}
-<img src="/ballon.svg" className="absolute top-40" alt="" />
+      <img src="/ballon.svg" className="absolute top-40" alt="" />
       {/* Navbar */}
       <div className="flex items-center z-[1000] justify-between md:px-20 px-8 py-2 bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
         <div className="flex items-center gap-3">
@@ -44,14 +44,12 @@ export default function Home() {
             Reward Token
           </h2>
         </div>
-        <button
-          className="bg-white py-2 md:px-10 px-6 rounded-3xl text-black font-bold md:text-[18px] text-[14px] hover:bg-transparent border hover:border-white hover:text-white"
-        >
+        <button className="bg-white py-2 md:px-10 px-6 rounded-3xl text-black font-bold md:text-[18px] text-[14px] hover:bg-transparent border hover:border-white hover:text-white">
           BUY
         </button>
       </div>
-<img src="/circle.svg" className="absolute" alt="" />
-      <div className="relative flex flex-col md:pt-10 pt-20 gap-8 justify-center w-screen items-center h-screen">
+      <img src="/circle.svg" className="absolute" alt="" />
+      <div className="relative flex flex-col md:pt-10 pt-20 gap-4 justify-center w-screen items-center h-screen">
         <h2 className="text-white lg:text-[150px] text-[80px] font-[700] lg:w-[45%] md:w-[70%] w-[85%] text-center">
           $RWD
         </h2>
@@ -59,19 +57,31 @@ export default function Home() {
           The most rewarding token on the Binance Smart Chain.
         </p>
 
-        <div className="flex z-[1000] md:flex-row flex-col items-center gap-4">
-          <div
-            ref={textToCopyRef}
-            className="py-3 bg-black border border-white border-opacity-10 text-white rounded-3xl text-center text-[14px] md:w-[410px] w-[400px]"
-          >
-            0x048ab6dbfa7444de1d77a4970b6ed19d7495db36
+        <div className="flex gap-4">
+          <button className="py-2 md:px-10 px-6 rounded-3xl text-[14px] bg-transparent border border-white border-opacity-40 text-white">
+            Whitepaper
+          </button>
+          <button className="py-2 md:px-10 px-6 rounded-3xl text-[14px] bg-transparent border border-white border-opacity-40 text-white">
+            Roadmap
+          </button>
+        </div>
+
+        <div className="flex z-[1000] md:flex-row flex-col items-end gap-4">
+          <div className="flex flex-col gap-1">
+            <p className="text-white">Contract Address:</p>
+            <div
+              ref={textToCopyRef}
+              className="py-3 bg-black border border-white border-opacity-10 text-white rounded-3xl text-center text-[14px] md:w-[410px] w-[400px]"
+            >
+              0x048ab6dbfa7444de1d77a4970b6ed19d7495db36
+            </div>
           </div>
           <button
-          onClick={copyToClipboard}
-          className="bg-white py-2 md:px-10 px-6 rounded-3xl text-black text-[14px] hover:bg-transparent border hover:border-white hover:text-white"
-        >
-          {isCopied ? "Copied" : "Copy"}
-        </button>
+            onClick={copyToClipboard}
+            className="bg-white py-2 md:px-10 px-6 rounded-3xl text-black text-[14px] hover:bg-transparent border hover:border-white hover:text-white"
+          >
+            {isCopied ? "Copied" : "Copy"}
+          </button>
         </div>
 
         <div className="flex md:flex-row flex-col  items-center gap-5">
@@ -96,11 +106,9 @@ export default function Home() {
         </div>
 
         <div className="flex md:flex-row flex-col items-center gap-6">
-          <ul className="list-disc flex items-center gap-10">
-            <li className="text-white text-opacity-70 text-[20px]">Whitepaper</li>
-            <li className="text-white text-opacity-70 text-[20px]">Roadmap</li>
-          </ul>
-          <p className="text-white text-opacity-70 text-[20px]">© Reward Token, All right reserved.</p>
+          <p className="text-white text-opacity-70 text-[20px]">
+            © Reward Token, All right reserved.
+          </p>
         </div>
       </div>
     </div>
