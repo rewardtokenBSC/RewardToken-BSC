@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState, useRef } from "react";
 import { TbBrandTelegram, TbBrandX } from "react-icons/tb";
 
@@ -35,7 +36,11 @@ export default function Home() {
     <div className="relative bg-black overflow-x-hidden md:overflow-y-hidden overflow-y-auto">
       {/* Background Image */}
       {/* <div className="absolute inset-0 bg-[url(/bg.svg)] bg-no-repeat bg-cover"></div> */}
-      <img src="/ballon.svg" className="absolute md:left-0 left-10 top-40" alt="" />
+      <img
+        src="/ballon.svg"
+        className="absolute md:left-0 left-10 top-40"
+        alt=""
+      />
       {/* Navbar */}
       <div className="flex items-center z-[1000] justify-between md:px-20 px-8 py-2 bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
         <div className="flex items-center gap-3">
@@ -44,9 +49,16 @@ export default function Home() {
             Reward Token
           </h2>
         </div>
-        <button className="bg-white py-2 md:px-10 px-6 rounded-3xl text-black font-bold md:text-[18px] text-[14px] hover:bg-transparent border hover:border-white hover:text-white">
-          BUY
-        </button>
+        <Link
+          target="_blank"
+          href={
+            "https://pancakeswap.finance/swap?outputCurrency=0x048AB6dBfA7444De1d77A4970b6ED19d7495Db36&inputCurrency=BNB"
+          }
+        >
+          <button className="bg-white py-2 md:px-10 px-6 rounded-3xl text-black font-bold md:text-[18px] text-[14px] hover:bg-transparent border hover:border-white hover:text-white">
+            BUY
+          </button>
+        </Link>
       </div>
       <img src="/circle.svg" className="absolute" alt="" />
       <div className="relative flex flex-col md:pt-10 pt-20 gap-4 justify-center w-screen items-center h-screen">
@@ -58,17 +70,19 @@ export default function Home() {
         </p>
 
         <div className="flex gap-4">
-          <button className="py-2 md:px-10 px-6 rounded-3xl text-[14px] bg-transparent border border-white border-opacity-40 text-white">
+          <button className="py-2 md:px-10 px-6 rounded-3xl text-[14px] bg-transparent hover:bg-white hover:text-black border border-white border-opacity-40 text-white">
             Whitepaper
           </button>
-          <button className="py-2 md:px-10 px-6 rounded-3xl text-[14px] bg-transparent border border-white border-opacity-40 text-white">
+          <button className="py-2 md:px-10 px-6 rounded-3xl text-[14px] bg-transparent hover:bg-white hover:text-black border border-white border-opacity-40 text-white">
             Roadmap
           </button>
         </div>
 
         <div className="flex z-[1000] md:flex-row flex-col md:items-end items-center md:px-0 px-8 gap-4">
           <div className="flex flex-col gap-1">
-            <p className="text-white md:text-start text-center">Contract Address:</p>
+            <p className="text-white md:text-start text-center">
+              Contract Address:
+            </p>
             <div
               ref={textToCopyRef}
               className="py-3 bg-black border border-white border-opacity-10 text-white rounded-3xl text-center text-[14px] md:w-[410px] w-[400px]"
