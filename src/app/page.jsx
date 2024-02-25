@@ -68,7 +68,7 @@ export default function Home() {
 
         <div className="flex z-[1000] md:flex-row flex-col md:items-end items-center md:px-0 px-8 gap-4">
           <div className="flex flex-col gap-1">
-            <p className="text-white">Contract Address:</p>
+            <p className="text-white md:text-start text-center">Contract Address:</p>
             <div
               ref={textToCopyRef}
               className="py-3 bg-black border border-white border-opacity-10 text-white rounded-3xl text-center text-[14px] md:w-[410px] w-[400px]"
