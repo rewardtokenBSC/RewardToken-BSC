@@ -35,7 +35,7 @@ export default function Home() {
     <div className="relative bg-black overflow-x-hidden md:overflow-y-hidden overflow-y-auto">
       {/* Background Image */}
       {/* <div className="absolute inset-0 bg-[url(/bg.svg)] bg-no-repeat bg-cover"></div> */}
-      <img src="/ballon.svg" className="absolute top-40" alt="" />
+      <img src="/ballon.svg" className="absolute md:left-0 left-10 top-40" alt="" />
       {/* Navbar */}
       <div className="flex items-center z-[1000] justify-between md:px-20 px-8 py-2 bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg absolute inset-x-0 top-0">
         <div className="flex items-center gap-3">
