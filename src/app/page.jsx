@@ -66,7 +66,7 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="flex z-[1000] md:flex-row flex-col items-end gap-4">
+        <div className="flex z-[1000] md:flex-row flex-col md:items-end items-center md:px-0 px-8 gap-4">
           <div className="flex flex-col gap-1">
             <p className="text-white">Contract Address:</p>
             <div
