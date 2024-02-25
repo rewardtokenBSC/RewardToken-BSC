@@ -84,12 +84,12 @@ export default function Home() {
 
         <div className="flex items-center gap-4">
           <a target="_blank" href={"http://x.com/rewardtokenBSC_"}>
-            <div className="bg-white bg-opacity-10 p-4 rounded-md text-white text-opacity-70 text-[25px]">
+            <div className="md:bg-white md:bg-opacity-10 bg-black border border-white border-opacity-10 p-4 rounded-md text-white text-opacity-70 text-[25px]">
               <TbBrandX />
             </div>
           </a>
           <a target="_blank" href={"https://t.me/rewardtokenBSC"}>
-            <div className="bg-white bg-opacity-10 p-4 rounded-md text-white text-opacity-70 text-[25px]">
+            <div className="md:bg-white md:bg-opacity-10 bg-black border border-white border-opacity-10 p-4 rounded-md text-white text-opacity-70 text-[25px]">
               <TbBrandTelegram />
             </div>
           </a>
