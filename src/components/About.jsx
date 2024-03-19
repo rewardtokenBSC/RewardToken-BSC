@@ -5,7 +5,7 @@ export default function About() {
     <div className="grid lg:grid-cols-2 grid-cols-1 overflow-hidden items-center gap-10 lg:px-40 md:px-20 px-10 py-20 relative">
       <img src="/circle-yellow.svg" className=" absolute left-0  top-0" alt="" />
       <img src="/yellowish.svg" className=" absolute right-0 rounded-full bottom-0" alt="" />
-      <div className="flex flex-col gap-6">
+      <div data-aos="fade-up" className="flex flex-col gap-6">
         <h2 className="text-white md:text-[48px] text-[30px] font-[700]">
           What is Reward Token?
         </h2>
@@ -24,8 +24,8 @@ export default function About() {
         </div>
       </div>
       <div>
-        <img src="/about.svg" className="z-[1000] hidden lg:block relative" alt="" />
-        <img src="/md-rect.svg" className="z-[1000] lg:hidden block relative" alt="" />
+        <img data-aos="fade-left" src="/about.svg" className="z-[1000] hidden lg:block relative" alt="" />
+        <img data-aos="fade-left" src="/md-rect.svg" className="z-[1000] lg:hidden block relative" alt="" />
         
       </div>
     </div>

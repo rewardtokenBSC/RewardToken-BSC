@@ -1,9 +1,8 @@
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import AppWrapper from "@/components/AppWrapper";
 
-// const inter = Inter({ subsets: ["latin"] });
-// const cret = Creato({ subsets: ["latin"] });
-const space = Space_Grotesk({ subsets: ["latin"]})
+const space = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Reward Token",
@@ -13,7 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={space.className}>{children}</body>
+      <body className={space.className}>
+        <AppWrapper>{children}</AppWrapper>
+      </body>
     </html>
   );
 }

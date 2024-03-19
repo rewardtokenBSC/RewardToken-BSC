@@ -1,0 +1,31 @@
+/* Roadmap.module.css */
+
+.roadmap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stepLine {
+    width: 2px;
+    height: 100px; /* Adjust height as needed */
+    background-color: #fff;
+  }
+  
+  .cornerLine {
+    width: 100px; /* Adjust length as needed */
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+  
+  .stepText {
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  
