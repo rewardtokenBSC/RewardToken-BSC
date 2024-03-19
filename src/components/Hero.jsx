@@ -1,7 +1,28 @@
-import React from "react";
+"use client"
+
+import React, { useState, useEffect } from "react";
 import { TbCopyleftFilled } from "react-icons/tb";
 
 export default function Hero() {
+  const [typedText, setTypedText] = useState("");
+  const textToType = "Reward Token.";
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingSpeed = 100; // Adjust typing speed (in milliseconds)
+    
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= textToType.length) {
+        setTypedText(textToType.substring(0, currentIndex)); // Update typed text
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval); // Stop typing when finished
+      }
+    }, typingSpeed);
+    
+    return () => clearInterval(typingInterval); // Clean up interval on unmount
+  }, []);
+
   return (
     <div className="relative h-screen">
       <div className="flex justify-between lg:pl-40 md:pl-36 px-10 items-center h-full">
@@ -9,12 +30,11 @@ export default function Hero() {
           <h2 className="lg:text-[70px] md:text-[66px] text-[46px] relative font-[700] text-white lg:leading-[88px] md:leading-[40px]">
             Earn continuous rewards by holding{" "}
             <span className="text-transparent bg-gradient-to-r from-[#FFF3B3] to-[#FFE500] bg-clip-text">
-              Reward Token.
+              {typedText}
             </span>
           </h2>
           <p className="text-[24px] font-[700] text-[#C8C2C2]">
-            A community driven token built on BNB chain to reward loyalty and
-            engagement in the crypto world
+            A community-driven token built on the BNB chain to reward loyalty and engagement in the crypto world
           </p>
           <div className="flex md:flex-row flex-col md:items-center items-start gap-6">
             <button className="flex items-center justify-center bg-[#FFE500] py-3 px-8 font-medium rounded-lg">
@@ -34,7 +54,11 @@ export default function Hero() {
         <div></div>
       </div>
       <div>
-        <img className="absolute lg:right-0 lg:top-0 md:-right-48 md:-top-56 bottom-0" src="/background.svg" alt="" />
+        <img
+          className="absolute lg:right-0 lg:top-0 md:-right-48 md:-top-56 bottom-0"
+          src="/background.svg"
+          alt=""
+        />
       </div>
     </div>
   );
