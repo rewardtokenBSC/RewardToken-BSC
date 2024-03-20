@@ -2,27 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { TbCopyleftFilled } from "react-icons/tb";
-import Typical from "react-typical";
 
 export default function Hero() {
-  // const [typedText, setTypedText] = useState("");
-  // const textToType = "";
-
-  // useEffect(() => {
-  //   let currentIndex = 0;
-  //   const typingSpeed = 100; // Adjust typing speed (in milliseconds)
-
-  //   const typingInterval = setInterval(() => {
-  //     if (currentIndex <= textToType.length) {
-  //       setTypedText(textToType.substring(0, currentIndex)); // Update typed text
-  //       currentIndex++;
-  //     } else {
-  //       clearInterval(typingInterval); // Stop typing when finished
-  //     }
-  //   }, typingSpeed);
-
-  //   return () => clearInterval(typingInterval); // Clean up interval on unmount
-  // }, []);
 
   return (
     <div className="relative h-screen">
@@ -40,23 +21,6 @@ export default function Hero() {
           <p className="text-[24px] h-[100px] font-[700] text-[#C8C2C2]">
             A community-driven token built on the BNB chain to reward loyalty
             and engagement in the crypto world
-            {/* <Typical
-              steps={[
-                "A community-driven token built on the BNB chain to reward loyalty and engagement in the crypto world",
-                5000,
-                "Tokenized community rewards on the BNB blockchain fostering loyalty and active engagement within the cryptocurrency ecosystem.",
-                5000,
-                "A BNB-based community token designed to incentivize loyalty and foster active engagement throughout the crypto community.",
-                5000,
-                "Rewarding loyalty and encouraging engagement in the crypto space through a community-driven token built on the BNB chain.",
-                5000,
-                "Building a strong crypto community through a BNB-based token that incentivizes loyalty and promotes active engagement.",
-                5000,
-              ]}
-              className="text-[#C8C2C2]"
-              wrapper="p"
-              loop={Infinity}
-            /> */}
           </p>
           <div className="flex md:flex-row flex-col md:items-center items-start gap-6">
             <button className="flex items-center justify-center bg-[#FFE500] py-3 px-8 font-medium rounded-lg">
