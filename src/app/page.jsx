@@ -1,53 +1,51 @@
-"use client";
-import About from "@/components/About";
-import GetStarted from "@/components/GetStarted";
-import Hero from "@/components/Hero";
-import LearnMore from "@/components/LearnMore";
-import Roadmap from "@/components/RoadMap";
-import Link from "next/link";
-import { useState, useRef } from "react";
-import { TbBrandTelegram, TbBrandX } from "react-icons/tb";
+"use client"
 
-export default function Home() {
-  const [isCopied, setIsCopied] = useState(false);
-  const textToCopyRef = useRef(null);
 
-  const copyToClipboard = () => {
-    const textToCopy = textToCopyRef.current.innerText;
-    const tempTextArea = document.createElement("textarea");
-    tempTextArea.value = textToCopy;
-    document.body.appendChild(tempTextArea);
-    tempTextArea.select();
-    tempTextArea.setSelectionRange(0, 99999);
+import React, { useState } from "react";
 
-    document.execCommand("copy");
-    document.body.removeChild(tempTextArea);
-    setIsCopied(true);
-    setTimeout(() => {
-      setIsCopied(false);
-    }, 3000);
-  };
+export default function Page() {
+    const [contractAddress, setContractAddress] = useState("0x048ab6dbfa7444de1d77a4970b6ed19d7495db36");
+    const [isCopied, setIsCopied] = useState(false);
+  
+    const copyContractAddress = () => {
+      navigator.clipboard.writeText(contractAddress)
+        .then(() => {
+          console.log("Contract address copied to clipboard:", contractAddress);
+          setIsCopied(true);
+          setTimeout(() => setIsCopied(false), 3000); // Reset copied state after 3 seconds
+        })
+        .catch((error) => {
+          console.error("Unable to copy contract address to clipboard:", error);
+        });
+    };
 
   return (
-    <div className="bg-[#020202] overflow-x-hidden">
-      <div className="bg-black w-full flex items-center justify-between sticky top-0 shadow border-b py-3 lg:px-40 md:px-20 px-10 border-white border-opacity-10">
-        <div>
-          <h2 className="text-white font-semibold text-xl">Reward Token</h2>
-        </div>
-        <div>
-          <button className="bg-[#FFE500] py-2 px-6 rounded-lg text-black font-medium">Buy</button>
-        </div>
+    <div className="bg-black h-screen overflow-y-hidden overflow-x-hidden">
+      <div className="flex items-center justify-between lg:px-40 md:px-20 px-10 py-5 border-b border-white border-opacity-10">
+        <h1 className="text-white text-2xl">Reward Token</h1>
+        <button className="py-2 px-10 bg-yellow-400 rounded-md text-black">
+          Buy
+        </button>
       </div>
-      <Hero />
-      <div>
-        <img src="/Ellipse.svg" className="z-[1000] -translate-y-10" alt="" />
-      </div>
-      <About />
-      <GetStarted />
-      <Roadmap />
-      <LearnMore />
 
-      <div className="pb-10 flex items-center justify-center"><p className="text-[#FFE500]">Reward token   © 2024 All Rights Reserved.</p></div>
+      <div className="flex flex-col mb-28 justify-center items-center h-full w-full">
+        <h1 className="text-transparent bg-gradient-to-r lg:text-[80px] md:text-[50px] text-[30px]  py-10 from-[#FFF3B3] to-[#FFE500] bg-clip-text">
+          Reward Token
+        </h1>
+        <div className="flex md:flex-row flex-col md:items-end items-start gap-2">
+          <div className="flex flex-col gap-2">
+            <label className="text-white" htmlFor="">
+              Contract Address:
+            </label>
+            <div className="bg-white py-2 px-6 rounded-lg">
+              {contractAddress}
+            </div>
+          </div>
+          <button onClick={copyContractAddress} className="py-2 px-10 bg-yellow-400 rounded-md text-black">
+            {isCopied ? "Copied!" : "Copy"}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
