@@ -6,6 +6,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import MouseIndicator from "./MouseIndicator";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function AppWrapper({ children }) {
   useEffect(() => {
@@ -17,6 +18,7 @@ export default function AppWrapper({ children }) {
 
   return (
     <>
+      <SpeedInsights />
       <MouseIndicator />
       <div>{children}</div>
     </>

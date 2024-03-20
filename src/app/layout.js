@@ -2,6 +2,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import AppWrapper from "@/components/AppWrapper";
 
+
 const space = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata = {
