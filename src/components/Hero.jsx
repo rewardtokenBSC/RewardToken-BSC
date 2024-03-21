@@ -7,12 +7,12 @@ export default function Hero() {
 
   return (
     <div className="relative h-screen">
-      <div className="flex justify-between lg:pl-40 md:pl-36 px-10 items-center h-full">
+      <div className="flex justify-between lg:pl-40 md:pl-[6rem] px-10 items-center h-full">
         <div
           data-aos="fade-up"
-          className="relative flex flex-col gap-6 z-[1000] xl:w-[60%] lg:w-[65%]"
+          className="relative flex flex-col gap-6 z-[1000] xl:w-[60%] lg:w-[65%] w-full"
         >
-          <h2 className="lg:text-[70px] md:text-[66px] text-[36px] relative font-[700] text-white lg:leading-[88px] md:leading-[40px]">
+          <h2 className="lg:text-[70px] md:text-[66px] text-[36px] relative font-[700] text-white lg:leading-[88px] md:leading-[70px] leading-[40px]">
             Earn continuous rewards by holding{" "}
             <span className="text-transparent bg-gradient-to-r from-[#FFF3B3] to-[#FFE500] bg-clip-text">
               Reward Token.
