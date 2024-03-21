@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 overflow-hidden items-center gap-10 lg:px-40 md:px-20 px-10 py-20 relative">
+    <div className="grid lg:grid-cols-2 grid-cols-1 overflow-hidden items-center gap-10 lg:px-20  md:px-20 px-10 py-20 relative">
       <img src="/circle-yellow.svg" className=" absolute left-0  top-0" alt="" />
       <img src="/yellowish.svg" className=" absolute right-0 rounded-full bottom-0" alt="" />
       <div data-aos="fade-up" className="flex flex-col gap-6">

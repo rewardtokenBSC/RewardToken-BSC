@@ -6,11 +6,11 @@ import { TbCopyleftFilled, TbUsers } from "react-icons/tb";
 export default function Hero() {
 
   return (
-    <div className="relative h-screen">
-      <div className="flex justify-between lg:pl-40 md:pl-[6rem] px-10 items-center h-full">
+    <div className="relative h-screen ">
+      <div className="flex justify-between container lg:pl-20 md:pl-[6rem] px-6 items-center h-full">
         <div
           data-aos="fade-up"
-          className="relative flex flex-col gap-6 z-[1000] xl:w-[60%] lg:w-[65%] w-full"
+          className="relative flex flex-col gap-6 z-[1000] lg:w-[60%] w-full"
         >
           <h2 className="lg:text-[70px] md:text-[66px] text-[36px] relative font-[700] text-white lg:leading-[88px] md:leading-[70px] leading-[40px]">
             Earn continuous rewards by holding{" "}
@@ -18,11 +18,11 @@ export default function Hero() {
               Reward Token.
             </span>
           </h2>
-          <p className="text-[24px] font-[700] text-[#C8C2C2]">
+          <p className="md:text-[24px] text-[16px] font-[700] text-[#C8C2C2]">
             A community-driven token built on the BNB chain to reward loyalty
             and engagement in the crypto world
           </p>
-          <div className="flex md:flex-row flex-col md:items-center items-start gap-6">
+          <div className="flex md:flex-row flex-col md:items-center items-start md:py-3 py-0 gap-6">
             <button className="flex items-center justify-center bg-[#FFE500] py-3 px-8 font-medium rounded-lg">
               <span>
                 <TbCopyleftFilled />
