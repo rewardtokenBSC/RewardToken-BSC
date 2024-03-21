@@ -18,7 +18,7 @@ export default function MouseIndicator() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 z-50 pointer-events-none">
+    <div className="fixed top-0 left-0 z-[1000] pointer-events-none">
       <div
         className="w-14 h-14 rounded-full bg-yellow-400 text-center font-bold flex justify-center items-center overflow-hidden shadow-md"
         style={{ transform: `translate(${position.x}px, ${position.y}px)` }}

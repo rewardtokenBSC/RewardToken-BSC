@@ -19,7 +19,7 @@ export default function AppWrapper({ children }) {
   return (
     <>
       <SpeedInsights />
-      <MouseIndicator />
+      {/* <MouseIndicator /> */}
       <div>{children}</div>
     </>
   );

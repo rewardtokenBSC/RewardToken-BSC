@@ -43,6 +43,11 @@ export default function Home() {
         <img src="/Ellipse.svg" className="z-[1000] -translate-y-10" alt="" />
       </div>
       <About />
+      <div className="flex justify-center items-center py-20">
+        <img src="/desktop.svg" className="lg:block hidden" alt="" />
+        <img src="/tablet.svg" className=" lg:hidden md:block hidden" alt="" />
+        <img src="/mobile.svg" className="md:hidden block" alt="" />
+      </div>
       <GetStarted />
       <Roadmap />
       <LearnMore />

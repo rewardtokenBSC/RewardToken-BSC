@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { TbCopyleftFilled } from "react-icons/tb";
+import { TbCopyleftFilled, TbUsers } from "react-icons/tb";
 
 export default function Hero() {
 
@@ -29,10 +29,10 @@ export default function Hero() {
               </span>{" "}
               Copy contract address
             </button>
-            <button className="flex items-center justify-center bg-[#191919] text-[#FFE500] py-3 px-8 font-medium rounded-lg">
+            <button className="flex items-center gap-2 justify-center bg-[#191919] text-[#FFE500] py-3 px-8 font-medium rounded-lg">
               Join community
               <span>
-                <TbCopyleftFilled />
+                <TbUsers />
               </span>{" "}
             </button>
           </div>
