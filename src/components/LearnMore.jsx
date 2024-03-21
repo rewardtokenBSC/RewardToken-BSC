@@ -6,7 +6,7 @@ export default function LearnMore() {
     <div className="lg:px-40 md:px-20 px-10 py-20">
       <h1
         data-aos="fade-up"
-        className="font-bold text-white text-center text-5xl pb-10"
+        className="font-bold text-white text-center md:text-5xl text-3xl pb-10"
       >
         Learn More About Reward Token
       </h1>

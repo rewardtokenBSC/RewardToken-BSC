@@ -12,13 +12,13 @@ export default function Hero() {
           data-aos="fade-up"
           className="relative flex flex-col gap-6 z-[1000] xl:w-[60%] lg:w-[65%]"
         >
-          <h2 className="lg:text-[70px] md:text-[66px] text-[46px] relative font-[700] text-white lg:leading-[88px] md:leading-[40px]">
+          <h2 className="lg:text-[70px] md:text-[66px] text-[36px] relative font-[700] text-white lg:leading-[88px] md:leading-[40px]">
             Earn continuous rewards by holding{" "}
             <span className="text-transparent bg-gradient-to-r from-[#FFF3B3] to-[#FFE500] bg-clip-text">
               Reward Token.
             </span>
           </h2>
-          <p className="text-[24px] h-[100px] font-[700] text-[#C8C2C2]">
+          <p className="text-[24px] font-[700] text-[#C8C2C2]">
             A community-driven token built on the BNB chain to reward loyalty
             and engagement in the crypto world
           </p>
