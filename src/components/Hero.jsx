@@ -6,7 +6,7 @@ import { TbCopyleftFilled, TbUsers } from "react-icons/tb";
 export default function Hero() {
 
   return (
-    <div className="relative h-screen ">
+    <div className="relative md:h-screen py-20 md:py-0">
       <div className="flex justify-between container lg:pl-20 md:pl-[6rem] px-6 items-center h-full">
         <div
           data-aos="fade-up"

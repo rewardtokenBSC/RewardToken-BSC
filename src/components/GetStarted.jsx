@@ -2,12 +2,12 @@ import React from "react";
 
 export default function GetStarted() {
   return (
-    <div className="lg:px-40 md:px-20 px-10 bg-[#FFE500] py-20">
-        <h1 data-aos="fade-up" className="pb-10 font-semibold text-5xl">Get Started</h1>
+    <div className="lg:px-40 md:px-20 px-6 bg-[#FFE500] py-20">
+        <h1 data-aos="fade-up" className="md:text-[48px] text-[30px] md:pb-20 pb-10 text-black font-[700]">Get Started</h1>
       <div className="grid md:grid-cols-2 grid-col gap-10">
         <div data-aos="fade-up" className="bg-[#FFD60054] bg-opacity-40 hover:text-white flex flex-col gap-4 hover:bg-black transition-all duration-500 ease-in-out border border-[#000] p-8 rounded-2xl">
           {/* <img src="/medal-line.svg" alt="" /> */}
-          <div className="border-2 py-2 px-4 rounded-lg w-fit border-white border-opacity-40">
+          <div className="border-2 py-2 px-4 rounded-lg w-fit text-[12px] border-white border-opacity-40">
             1
           </div>
           <h2>Deposit BNB</h2>
@@ -45,8 +45,8 @@ export default function GetStarted() {
           </button>
         </div>
 
-        <div data-aos="fade-up" className="bg-[#FFD60054] bg-opacity-40 hover:text-white flex flex-col justify-center items-center gap-4 hover:bg-black border border-[#000] rounded-2xl">
-          <img src="/pancake.svg" className="w-full h-full" alt="" />
+        <div data-aos="fade-up" className="bg-[#FFD60054] bg-opacity-40 md:h-0 h-[300px] hover:text-white flex flex-col justify-center items-center gap-4 hover:bg-black border border-[#000] rounded-2xl">
+          <img src="/pancake.svg" className="w-full md:h-full h-[300px]" alt="" />
         </div>
       </div>
     </div>
