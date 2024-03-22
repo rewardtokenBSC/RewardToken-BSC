@@ -37,7 +37,10 @@ export default function Hero() {
             </button>
           </div>
         </div>
-        <div></div>
+        <div>
+          {/* <iframe src="/rwd-animation.mov" frameborder="0"></iframe>
+          <video src="/rwd-animation.mov"></video> */}
+        </div>
       </div>
       <div>
         <img

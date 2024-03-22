@@ -29,30 +29,42 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-[#020202] overflow-x-hidden">
-      <div className="bg-black w-full flex items-center justify-between sticky top-0 shadow border-b py-4 lg:px-20  md:px-20 px-10 border-white border-opacity-10">
-        <div>
-          <h2 className="text-white font-semibold text-xl">Reward Token</h2>
+    <section className="bg-[#020202]">
+      <div className="bg-[#020202] overflow-x-hidden">
+        <div className="bg-black w-full flex items-center justify-between sticky top-0 shadow border-b py-4 lg:px-20  md:px-20 px-10 border-white border-opacity-10">
+          <div>
+            <h2 className="text-white font-semibold text-xl">Reward Token</h2>
+          </div>
+          <div>
+            <button className="bg-[#FFE500] py-2 px-6 rounded-lg text-black font-medium">
+              Buy
+            </button>
+          </div>
         </div>
+        <Hero />
         <div>
-          <button className="bg-[#FFE500] py-2 px-6 rounded-lg text-black font-medium">Buy</button>
+          <img src="/Ellipse.svg" className="z-[1000] -translate-y-10" alt="" />
         </div>
+        <About />
+        <div className="flex justify-center items-center py-20">
+          <img src="/desktop.svg" className="lg:block hidden" alt="" />
+          <img
+            src="/tablet.svg"
+            className=" lg:hidden md:block hidden"
+            alt=""
+          />
+          <img src="/mobile.svg" className="md:hidden block" alt="" />
+        </div>
+        <GetStarted />
+        <Roadmap />
       </div>
-      <Hero />
-      <div>
-        <img src="/Ellipse.svg" className="z-[1000] -translate-y-10" alt="" />
-      </div>
-      <About />
-      <div className="flex justify-center items-center py-20">
-        <img src="/desktop.svg" className="lg:block hidden" alt="" />
-        <img src="/tablet.svg" className=" lg:hidden md:block hidden" alt="" />
-        <img src="/mobile.svg" className="md:hidden block" alt="" />
-      </div>
-      <GetStarted />
-      <Roadmap />
       <LearnMore />
 
-      <div className="pb-10 flex items-center justify-center"><p className="text-[#FFE500]">Reward token   © 2024 All Rights Reserved.</p></div>
-    </div>
+      <div className="pb-10 flex items-center justify-center">
+        <p className="text-[#FFE500]">
+          Reward token © 2024 All Rights Reserved.
+        </p>
+      </div>
+    </section>
   );
 }
