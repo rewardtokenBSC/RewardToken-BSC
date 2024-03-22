@@ -16,13 +16,13 @@ export default function LearnMore() {
       >
         Learn More About Reward Token
       </h1>
-      <div className=" overflow-x-auto py-20">
-        <div className="grid grid-cols-3 overflow-x-auto lg:w-full w-[800px] gap-6 ">
+      <div className=" overflow-x-auto py-10">
+        <div className="grid grid-cols-3 overflow-x-auto py-6 lg:w-full w-[800px] gap-6 ">
           <div
             data-aos="fade-up"
-            className="hover:bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 bg-black border border-[#FFE500] p-8 rounded-lg"
+            className="bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 hover:bg-black border border-[#FFE500] p-8 rounded-lg"
           >
-            <img src="/medal-line.svg" alt="" />
+            <img src="/whitepaper_cleanup-removebg-preview.png" className="h-[100px]" alt="" />
             <h2 className="text-[#FFE500]">White Paper</h2>
             <p className="text-center text-white">
               Explore comprehensive details about the project for a deeper
@@ -31,16 +31,16 @@ export default function LearnMore() {
             <a
               href="/whitepaper.pdf" // Replace this with the actual path to your white paper PDF
               download="whitepaper.pdf"
-              className="py-3 px-6 rounded-lg bg-[#FFE500] text-black"
+               className="py-3 px-6 rounded-lg bg-[#FFE500] text-black"
             >
               Download
             </a>
           </div>
           <div
             data-aos="fade-up"
-            className="hover:bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 bg-black border border-[#FFE500] p-8 rounded-lg"
+            className="bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 hover:bg-black border border-[#FFE500] p-8 rounded-lg"
           >
-            <img src="/medal-line.svg" alt="" />
+            <img src="/roadmap_cleanup-removebg-preview.png" className="h-[100px]" alt="" />
             <h2 className="text-[#FFE500]">Road Map</h2>
             <p className="text-center text-white">
               Check out our detailed plans to learn more about what we have in
@@ -56,7 +56,7 @@ export default function LearnMore() {
           </div>
           <div
             data-aos="fade-up"
-            className="hover:bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 bg-black border border-[#FFE500] p-8 rounded-lg"
+            className="bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 hover:bg-black border border-[#FFE500] p-8 rounded-lg"
           >
             <img src="/community.jpg" alt="" />
             <p className="text-center text-white">
