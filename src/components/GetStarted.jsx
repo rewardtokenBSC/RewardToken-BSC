@@ -45,7 +45,7 @@ export default function GetStarted() {
           </button>
         </div>
 
-        <div data-aos="fade-up" className="md:h-0 h-[300px] hover:text-white flex flex-col justify-center items-center gap-4 bg-black border border-[#000] rounded-2xl">
+        <div data-aos="fade-up" className="md:h-full h-[300px] hover:text-white flex flex-col justify-center items-center gap-4 bg-black border border-[#000] rounded-2xl">
           <img src="/pancake.svg" className="w-full md:h-full h-[300px]" alt="" />
         </div>
       </div>

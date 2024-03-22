@@ -23,8 +23,8 @@ export default function About() {
           </button>
         </div>
       </div>
-      <div>
-        <img data-aos="fade-left" src="/about.svg" className="z-[1000] hidden lg:block relative" alt="" />
+      <div className="flex items-center justify-center">
+        <img data-aos="fade-left" src="/about2.png" className="z-[1000] h-[500px] hidden lg:block relative" alt="" />
         <img data-aos="fade-left" src="/md-rect.svg" className="z-[1000] lg:hidden block relative" alt="" />
         
       </div>

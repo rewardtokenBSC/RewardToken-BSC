@@ -36,9 +36,9 @@ export default function Home() {
             <h2 className="text-white font-semibold text-xl">Reward Token</h2>
           </div>
           <div>
-            <button className="bg-[#FFE500] py-2 px-6 rounded-lg text-black font-medium">
+            <Link target="_blank" href={"https://pancakeswap.finance/swap?outputCurrency=0x048AB6dBfA7444De1d77A4970b6ED19d7495Db36&inputCurrency=BNB"} className="bg-[#FFE500] py-2 px-6 rounded-lg text-black font-medium">
               Buy
-            </button>
+            </Link>
           </div>
         </div>
         <Hero />

@@ -2,8 +2,20 @@
 
 import React, { useState, useEffect } from "react";
 import { TbCopyleftFilled, TbUsers } from "react-icons/tb";
+import { FaCopy } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Hero() {
+  const contractAddress = "0x048ab6dbfa7444de1d77a4970b6ed19d7495db36";
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyClick = () => {
+    navigator.clipboard.writeText(contractAddress);
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 3000); // 3000 milliseconds = 3 seconds
+  };
 
   return (
     <div className="relative md:h-screen py-20 md:py-0">
@@ -23,18 +35,29 @@ export default function Hero() {
             and engagement in the crypto world
           </p>
           <div className="flex md:flex-row flex-col md:items-center items-start md:py-3 py-0 gap-6">
-            <button className="flex items-center justify-center bg-[#FFE500] py-3 px-8 font-medium rounded-lg">
-              <span>
-                <TbCopyleftFilled />
-              </span>{" "}
-              Copy contract address
-            </button>
-            <button className="flex items-center gap-2 justify-center bg-[#191919] text-[#FFE500] py-3 px-8 font-medium rounded-lg">
+            <div className="relative">
+              <button
+                className="flex items-center gap-2 justify-center bg-[#FFE500] py-3 px-8 font-medium rounded-lg"
+                onMouseEnter={() => setCopied(false)}
+                onClick={handleCopyClick}
+              >
+                <span>
+                  <FaCopy />
+                </span>{" "}
+                {copied ? "Copied!" : "Copy contract address"}
+              </button>
+              <p className="absolute text-white">{copied && contractAddress}</p>
+            </div>
+            <Link
+              href={"https://t.me/rewardtokenBSC"}
+              target="_blank"
+              className="flex items-center gap-2 justify-center bg-[#191919] shadow shadow-[#FFE500] text-[#FFE500] py-3 px-8 font-medium rounded-lg"
+            >
               Join community
               <span>
                 <TbUsers />
               </span>{" "}
-            </button>
+            </Link>
           </div>
         </div>
         <div>

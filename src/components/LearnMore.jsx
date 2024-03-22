@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   TbBrandFacebook,
@@ -19,7 +20,7 @@ export default function LearnMore() {
         <div className="grid grid-cols-3 overflow-x-auto lg:w-full w-[800px] gap-6 ">
           <div
             data-aos="fade-up"
-            className="bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 hover:bg-black border border-[#FFE500] p-8 rounded-lg"
+            className="hover:bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 bg-black border border-[#FFE500] p-8 rounded-lg"
           >
             <img src="/medal-line.svg" alt="" />
             <h2 className="text-[#FFE500]">White Paper</h2>
@@ -27,27 +28,35 @@ export default function LearnMore() {
               Explore comprehensive details about the project for a deeper
               understanding.
             </p>
-            <button className="py-3 px-6 rounded-lg bg-[#FFE500] text-black">
+            <a
+              href="/whitepaper.pdf" // Replace this with the actual path to your white paper PDF
+              download="whitepaper.pdf"
+              className="py-3 px-6 rounded-lg bg-[#FFE500] text-black"
+            >
               Download
-            </button>
+            </a>
           </div>
           <div
             data-aos="fade-up"
-            className="bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 hover:bg-black border border-[#FFE500] p-8 rounded-lg"
+            className="hover:bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 bg-black border border-[#FFE500] p-8 rounded-lg"
           >
             <img src="/medal-line.svg" alt="" />
             <h2 className="text-[#FFE500]">Road Map</h2>
             <p className="text-center text-white">
               Check out our detailed plans to learn more about what we have in
-              store for the future.
+              store for the future. 
             </p>
-            <button className="py-3 px-6 rounded-lg bg-[#FFE500] text-black">
+            <a
+              href="/road_map.jpg" // Replace this with the actual path to your white paper PDF
+              download="road_map.jpg"
+              className="py-3 px-6 rounded-lg bg-[#FFE500] text-black"
+            >
               Download
-            </button>
+            </a>
           </div>
           <div
             data-aos="fade-up"
-            className="bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 hover:bg-black border border-[#FFE500] p-8 rounded-lg"
+            className="hover:bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 bg-black border border-[#FFE500] p-8 rounded-lg"
           >
             <img src="/community.jpg" alt="" />
             <p className="text-center text-white">
@@ -55,15 +64,15 @@ export default function LearnMore() {
             </p>
             <p className="text-center text-[#FFE500]">Join us on all socials</p>
             <div className="flex items-center gap-4">
-              <div className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
+              <Link target="_blank" href={"https://t.me/rewardtokenBSC"} className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
                 <TbBrandTelegram />
-              </div>
+              </Link>
               <div className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
                 <TbBrandX />
               </div>
-              <div className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
+              <Link target="_blank" href={"https://www.facebook.com/share/p/iqoujkuXpoV2aFoZ/"} className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
                 <TbBrandFacebook />
-              </div>
+              </Link>
             </div>
           </div>
         </div>
