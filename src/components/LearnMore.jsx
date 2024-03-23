@@ -16,7 +16,7 @@ export default function LearnMore() {
       >
         Learn More About Reward Token
       </h1>
-      <div className=" overflow-x-auto py-10">
+      <div className=" overflow-x-auto overflow-y-hidden py-10">
         <div className="grid grid-cols-3 overflow-x-auto py-6 lg:w-full w-[800px] gap-6 ">
           <div
             data-aos="fade-up"

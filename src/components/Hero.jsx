@@ -18,7 +18,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative md:h-screen py-20 md:py-0">
+    <div className="relative lg:pt-20 overflow-y-hidden py-20 md:py-0">
       <div className="flex justify-between container lg:pl-20 md:pl-[6rem] px-6 items-center h-full">
         <div
           data-aos="fade-up"
@@ -65,11 +65,11 @@ export default function Hero() {
           <video src="/rwd-animation.mov"></video> */}
         </div>
       </div>
-      <div>
+      <div >
         <img
           data-aos="zoom-in"
-          className="absolute lg:right-0 lg:top-0 md:-right-48 md:-top-56 bottom-0"
-          src="/background.svg"
+          className="absolute lg:right-36 lg:top-20 md:-right-48 md:-top-56 bottom-0"
+          src="/animate.gif"
           alt=""
         />
       </div>
