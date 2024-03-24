@@ -123,7 +123,7 @@ const Roadmap = () => {
       </ol>
       <ol
         data-aos="fade-up"
-        class="relative flex md:hidden text-gray-500  flex-col gap-10 border-s border-e h-fit border-gray-200 dark:border-gray-700 dark:text-gray-400"
+        class="relative flex md:hidden text-gray-200  flex-col gap-10 border-s border-e h-fit border-gray-200 dark:border-gray-700 dark:text-gray-200"
       >
         <li class="mb-10">
           <div className="flex items-start pr-5">
