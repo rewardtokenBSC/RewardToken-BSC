@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 overflow-hidden items-center gap-10 lg:px-20  md:px-20 md:py-20 py-10 px-10 relative">
+    <div className="grid lg:grid-cols-2 grid-cols-1 overflow-hidden items-center gap-10 lg:px-20  pb-20 md:px-20 md:py-20 py-10 px-10 relative">
       {/* <img src="/circle-yellow.svg" className=" absolute left-0  top-0" alt="" />
       <img src="/yellowish.svg" className=" absolute right-0 rounded-full bottom-0" alt="" /> */}
       <div
@@ -12,7 +12,7 @@ export default function About() {
         <h2 className="text-white md:text-[48px] text-[30px] font-[700]">
           What is Reward Token?
         </h2>
-        <p className="text-white md:text-[20px] text-[12.78px] font-[500]">
+        <p className="text-white md:text-[20px] text-[12px] font-[500]">
           A decentralized reward system designed to empower investors to
           participate in the DeFi economy without the need for prior liquidity.
           Our token establishes a dynamic ecosystem, motivating holders to
@@ -30,7 +30,7 @@ export default function About() {
           </a>
         </div>
       </div>
-      <div className="flex items-center lg:-translate-y-12 justify-center">
+      <div className="flex items-center lg:-translate-y-12 mt-10 md:mt-0 justify-center">
         <img
           data-aos="fade-left"
           src="/hand.png"
@@ -40,7 +40,7 @@ export default function About() {
         <img
           data-aos="fade-left"
           src="/hand.png"
-          className="z-[900] h-[120px] absolute right-6 lg:hidden block"
+          className="z-[900] h-[100px] absolute  lg:hidden block"
           alt=""
         />
         {/* <img data-aos="fade-left" src="/md-rect.svg" className="z-[1000] lg:hidden block relative" alt="" /> */}

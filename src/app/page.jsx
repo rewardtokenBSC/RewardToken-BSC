@@ -31,10 +31,10 @@ export default function Home() {
   return (
     <section className="bg-[#020202]">
       <div className="bg-[#020202] overflow-x-hidden">
-        <div className="bg-black w-full flex items-center justify-between sticky top-0 shadow border-b py-4 lg:px-20  md:px-20 px-10 border-white border-opacity-10">
+        <div className="bg-black w-full flex items-center justify-between sticky top-0 shadow border-b py-4 lg:px-20  md:px-20 px-4 border-white border-opacity-10">
           <div className="flex items-center gap-2">
             <img src="/logo_final.png" className="h-[30px]" alt="" />
-            <h2 className="text-white font-semibold text-xl">Reward Token</h2>
+            <h2 className="text-white font-semibold md:text-xl text-md">Reward Token</h2>
           </div>
           <div>
             <Link target="_blank" href={"https://pancakeswap.finance/swap?outputCurrency=0x048AB6dBfA7444De1d77A4970b6ED19d7495Db36&inputCurrency=BNB"} className="bg-[#FFE500] py-2 px-6 rounded-lg text-black font-medium">
