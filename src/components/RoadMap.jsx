@@ -14,7 +14,7 @@ const Roadmap = () => {
       </h1>
       <ol
         data-aos="fade-up"
-        class="relative md:flex hidden text-gray-500  flex-col gap-10  border-s h-fit border-gray-200 dark:border-gray-700 dark:text-gray-400"
+        class="relative md:flex hidden text-gray-200  flex-col gap-10  border-s h-fit border-gray-200 dark:border-gray-700 dark:text-gray-200"
       >
         <li class="mb-10 ms-6">
           <span class="absolute flex gap-2 items-center justify-center -start-0 ">
