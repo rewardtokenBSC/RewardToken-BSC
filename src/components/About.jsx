@@ -40,7 +40,7 @@ export default function About() {
         <img
           data-aos="fade-left"
           src="/hand.png"
-          className="z-[900] h-[120px] absolute right-10 lg:hidden block"
+          className="z-[900] h-[120px] absolute right-6 lg:hidden block"
           alt=""
         />
         {/* <img data-aos="fade-left" src="/md-rect.svg" className="z-[1000] lg:hidden block relative" alt="" /> */}
