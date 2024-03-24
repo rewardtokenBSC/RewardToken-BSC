@@ -32,7 +32,8 @@ export default function Home() {
     <section className="bg-[#020202]">
       <div className="bg-[#020202] overflow-x-hidden">
         <div className="bg-black w-full flex items-center justify-between sticky top-0 shadow border-b py-4 lg:px-20  md:px-20 px-10 border-white border-opacity-10">
-          <div>
+          <div className="flex items-center gap-2">
+            <img src="/logo_final.png" className="h-[30px]" alt="" />
             <h2 className="text-white font-semibold text-xl">Reward Token</h2>
           </div>
           <div>
@@ -47,13 +48,13 @@ export default function Home() {
         {/* </div> */}
         <About />
         <div className="flex justify-center items-center py-20">
-          <img src="/desktop.svg" className="lg:block hidden" alt="" />
-          <img
+          <img src="/desktop.svg" className="" alt="" />
+          {/* <img
             src="/tablet.svg"
             className=" lg:hidden md:block hidden"
             alt=""
           />
-          <img src="/mobile.svg" className="md:hidden block" alt="" />
+          <img src="/mobile.svg" className="md:hidden block" alt="" /> */}
         </div>
         <GetStarted />
         <Roadmap />

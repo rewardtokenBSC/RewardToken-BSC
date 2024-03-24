@@ -23,9 +23,9 @@ export default function About() {
           </button>
         </div>
       </div>
-      <div className="flex items-center translate-x-14 -translate-y-12 justify-center">
-        <img data-aos="fade-left" src="/about2.png" className="z-[1000] h-[500px] hidden lg:block relative" alt="" />
-        <img data-aos="fade-left" src="/about2.png" className="z-[1000] h-[300px] lg:hidden block relative" alt="" />
+      <div className="flex items-center lg:translate-x-14 lg:-translate-y-12 justify-center">
+        <img data-aos="fade-left" src="/about_final.svg" className="z-[1000] h-[500px] hidden lg:block relative" alt="" />
+        <img data-aos="fade-left" src="/about_final.svg" className="z-[1000] h-[300px] lg:hidden block relative" alt="" />
         {/* <img data-aos="fade-left" src="/md-rect.svg" className="z-[1000] lg:hidden block relative" alt="" /> */}
         
       </div>

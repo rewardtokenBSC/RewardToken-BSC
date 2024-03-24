@@ -18,8 +18,8 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative lg:pt-20 overflow-y-hidden py-20 md:py-0">
-      <div className="flex justify-between container lg:pl-20 md:pl-[6rem] px-6 items-center h-full">
+    <div className="relative  overflow-y-hidden py-20 md:py-0">
+      <div className="flex lg:flex-row flex-col justify-between container lg:pl-20 md:pl-[6rem] px-6 items-center h-full">
         <div
           data-aos="fade-up"
           className="relative flex flex-col gap-6 z-[1000] lg:w-[60%] w-full"
@@ -60,18 +60,16 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        <div>
-          {/* <iframe src="/rwd-animation.mov" frameborder="0"></iframe>
-          <video src="/rwd-animation.mov"></video> */}
+        <div className="relative rounded-full mt-4 overflow-hidden">
+        <img
+          data-aos="zoom-in"
+          className="translate-y-20"
+          src="/final_small.gif"
+          alt=""
+        />
         </div>
       </div>
       <div >
-        <img
-          data-aos="zoom-in"
-          className="absolute lg:right-36 lg:top-20 md:-right-48 md:-top-56 bottom-0"
-          src="/animate.gif"
-          alt=""
-        />
       </div>
     </div>
   );
