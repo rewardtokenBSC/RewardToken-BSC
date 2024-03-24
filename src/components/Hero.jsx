@@ -18,7 +18,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative  overflow-y-hidden  pb-20  md:py-0">
+    <div className="relative  overflow-y-hidden  pb-20 pt-10 lg:pt-0  md:py-0">
       <div className="flex lg:flex-row flex-col justify-between container lg:pl-20 md:pl-[6rem] px-6 items-center md:h-full h-[80%]">
         <div
           data-aos="fade-up"
@@ -51,7 +51,7 @@ export default function Hero() {
             <Link
               href={"https://t.me/rewardtokenBSC"}
               target="_blank"
-              className="flex items-center gap-2 justify-center bg-[#191919] shadow shadow-[#FFE500] text-[#FFE500] py-3 px-8 font-medium rounded-lg"
+              className="flex items-center gap-2 justify-center bg-[#191919] hover:bg-opacity-40 shadow shadow-[#FFE500] text-[#FFE500] py-3 px-8 font-medium rounded-lg"
             >
               Join community
               <span>
@@ -60,7 +60,7 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        <div className="md:relative absolute right-1 translate-x-16 -bottom-2 pl-10 rounded-full overflow-hidden">
+        <div className="md:relative absolute right-1 lg:translate-x-16 -bottom-2 pl-10 rounded-full overflow-hidden">
         <img
           data-aos="zoom-in"
           className="md:h-[800px] h-[380px] "
