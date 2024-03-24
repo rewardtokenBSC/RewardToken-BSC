@@ -12,12 +12,12 @@ export default function LearnMore() {
     <section className="lg:px-40 px-5">
       <h1
         data-aos="fade-up"
-        className="font-bold text-white text-center md:text-5xl text-3xl pb-10"
+        className="font-bold text-white text-center md:text-5xl text-3xl "
       >
         Learn More About Reward Token
       </h1>
       <div className=" overflow-x-auto overflow-y-hidden py-10">
-        <div className="grid grid-cols-3 overflow-x-auto py-6 lg:w-full w-[800px] gap-6 ">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:px-0 px-10 overflow-x-auto overflow-y-hidden py-4 lg:w-full md:w-[1200px] gap-6 ">
           <div
             data-aos="fade-up"
             className="bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 hover:bg-black border border-[#FFE500] p-8 rounded-lg"

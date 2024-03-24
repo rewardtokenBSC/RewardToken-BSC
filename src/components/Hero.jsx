@@ -18,19 +18,19 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative  overflow-y-hidden py-20 md:py-0">
-      <div className="flex lg:flex-row flex-col justify-between container lg:pl-20 md:pl-[6rem] px-6 items-center h-full">
+    <div className="relative  overflow-y-hidden  pb-20  md:py-0">
+      <div className="flex lg:flex-row flex-col justify-between container lg:pl-20 md:pl-[6rem] px-6 items-center md:h-full h-[80%]">
         <div
           data-aos="fade-up"
-          className="relative flex flex-col gap-6 z-[1000] lg:w-[60%] w-full"
+          className="relative flex flex-col gap-6 z-[1000] lg:pl-20 pl-0 lg:w-[60%] w-full"
         >
-          <h2 className="lg:text-[70px] md:text-[66px] text-[36px] relative font-[700] text-white lg:leading-[88px] md:leading-[70px] leading-[40px]">
+          <h2 className="lg:text-[66px] md:text-[66px] text-[36px] relative font-[700] text-white lg:leading-[88px] md:leading-[70px] leading-[40px]">
             Earn continuous rewards by holding{" "}
             <span className="text-transparent bg-gradient-to-r from-[#FFF3B3] to-[#FFE500] bg-clip-text">
               Reward Token.
             </span>
           </h2>
-          <p className="md:text-[24px] text-[16px] font-[700] text-[#C8C2C2]">
+          <p className="md:text-[24px] text-[16px] font-[700] md:w-full w-[65%] text-[#C8C2C2]">
             A community-driven token built on the BNB smart chain to reward loyalty
             and engagement in the crypto world
           </p>
@@ -60,10 +60,10 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        <div className="relative rounded-full mt-4 overflow-hidden">
+        <div className="md:relative absolute right-1 translate-x-16 -bottom-2 pl-10 rounded-full overflow-hidden">
         <img
           data-aos="zoom-in"
-          className="h-[800px]"
+          className="md:h-[800px] h-[380px] "
           src="/final_small.gif"
           alt=""
         />

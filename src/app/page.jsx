@@ -47,8 +47,11 @@ export default function Home() {
           <img src="/Ellipse.svg" className="z-[1000] -translate-y-10" alt="" /> */}
         {/* </div> */}
         <About />
-        <div className="flex justify-center items-center py-20">
-          <img src="/desktop.svg" className="" alt="" />
+        <div className="flex flex-col justify-center items-center pb-20">
+        <h2 className="text-white md:text-[48px] text-[30px] pt-10 text-start font-[700]">
+          Tokennomics
+        </h2>
+          <img src="/tokenomics.png" className="lg:h-[500px] h-[250px] pt-10 w-auto" alt="" />
           {/* <img
             src="/tablet.svg"
             className=" lg:hidden md:block hidden"
@@ -56,7 +59,7 @@ export default function Home() {
           />
           <img src="/mobile.svg" className="md:hidden block" alt="" /> */}
         </div>
-        <GetStarted />
+        <GetStarted />cnter
         <Roadmap />
       </div>
       <LearnMore />

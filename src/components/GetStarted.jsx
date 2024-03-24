@@ -48,7 +48,7 @@ export default function GetStarted() {
 
         {/* <div data-aos="fade-up" className="md:h-full h-[300px] hover:text-white flex overflow-hidden justify-center items-center gap-4 bg-[#1C1C1C] border border-[#000] rounded-2xl">
           <img src="/phone1.png" className="w-full translate-y-20 md:h-full h-[300px]" alt="" /> */}
-          <img data-aos="fade-up" src="/Bolu.png" className="w-full md:h-full h-[300px]" alt="" />
+          <img data-aos="fade-up" src="/Bolu.png" className="w-full rounded-2xl md:h-full h-[300px]" alt="" />
         {/* </div> */}
       </div>
     </div>
