@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import {
+  TbBrandDiscord,
   TbBrandFacebook,
   TbBrandTelegram,
   TbBrandTwitter,
@@ -29,8 +30,8 @@ export default function LearnMore() {
               understanding.
             </p>
             <a
-              href="/whitepaper.pdf" // Replace this with the actual path to your white paper PDF
-              download="whitepaper.pdf"
+              href="/RewardToken.pdf" // Replace this with the actual path to your white paper PDF
+              download="RewardToken.pdf"
                className="py-3 px-6 rounded-lg bg-[#FFE500] text-black"
             >
               Download
@@ -70,8 +71,8 @@ export default function LearnMore() {
               <div className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
                 <TbBrandX />
               </div>
-              <Link target="_blank" href={"https://www.facebook.com/share/p/iqoujkuXpoV2aFoZ/"} className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
-                <TbBrandFacebook />
+              <Link target="_blank" href={"https://discord.gg/GYmSuJa63E"} className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
+                <TbBrandDiscord />
               </Link>
             </div>
           </div>
