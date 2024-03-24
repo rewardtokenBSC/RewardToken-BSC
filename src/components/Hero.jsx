@@ -32,7 +32,7 @@ export default function Hero() {
           </h2>
           <p className="md:text-[24px] text-[16px] font-[700] md:w-full w-[65%] text-[#C8C2C2]">
             A community-driven token built on the BNB smart chain to reward loyalty
-            and engagement in the crypto world
+            and engagement in the Web3 space
           </p>
           <div className="flex md:flex-row flex-col md:items-center items-start md:py-3 py-0 gap-6">
             <div className="relative">
