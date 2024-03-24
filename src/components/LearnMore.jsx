@@ -68,9 +68,9 @@ export default function LearnMore() {
               <Link target="_blank" href={"https://t.me/rewardtokenBSC"} className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
                 <TbBrandTelegram />
               </Link>
-              <div className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
+              <Link target="_blank" href={"https://x.com/rewardtokenRWD"} className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
                 <TbBrandX />
-              </div>
+              </Link>
               <Link target="_blank" href={"https://discord.gg/GYmSuJa63E"} className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
                 <TbBrandDiscord />
               </Link>
