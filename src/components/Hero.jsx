@@ -63,7 +63,7 @@ export default function Hero() {
         <div className="relative rounded-full mt-4 overflow-hidden">
         <img
           data-aos="zoom-in"
-          className="translate-y-20"
+          className="h-[800px]"
           src="/final_small.gif"
           alt=""
         />
