@@ -1,3 +1,3 @@
 ## Reward Token
 
-The most rewarding Bsc token
+The most rewarding token on the Binance Smart Chain!
