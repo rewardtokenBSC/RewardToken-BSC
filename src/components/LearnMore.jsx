@@ -23,29 +23,37 @@ export default function LearnMore() {
             data-aos="fade-up"
             className="bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 hover:bg-black border border-[#FFE500] p-8 rounded-lg"
           >
-            <img src="/whitepaper_cleanup-removebg-preview.png" className="h-[100px]" alt="" />
+            <img
+              src="/whitepaper_cleanup-removebg-preview.png"
+              className="h-[100px]"
+              alt=""
+            />
             <h2 className="text-[#FFE500]">White Paper</h2>
             <p className="text-center text-white">
               Explore comprehensive details about the project for a deeper
               understanding.
             </p>
             <a
-              href="/RewardToken.pdf" // Replace this with the actual path to your white paper PDF
-              download="RewardToken.pdf"
-               className="py-3 px-6 rounded-lg bg-[#FFE500] text-black"
+              href="/whitepaper"
+              target="_blank"
+              className="py-3 px-6 rounded-lg bg-[#FFE500] text-black"
             >
-              Download
+              Read whitepaper
             </a>
           </div>
           <div
             data-aos="fade-up"
             className="bg-[#FFD60054] bg-opacity-40 hover:text-white lg:w-full  flex flex-col justify-center items-center gap-4 hover:bg-black border border-[#FFE500] p-8 rounded-lg"
           >
-            <img src="/roadmap_cleanup-removebg-preview.png" className="h-[100px]" alt="" />
+            <img
+              src="/roadmap_cleanup-removebg-preview.png"
+              className="h-[100px]"
+              alt=""
+            />
             <h2 className="text-[#FFE500]">Road Map</h2>
             <p className="text-center text-white">
               Check out our detailed plans to learn more about what we have in
-              store for the future. 
+              store for the future.
             </p>
             <a
               href="/RewardRoadMap.pdf" // Replace this with the actual path to your white paper PDF
@@ -65,13 +73,25 @@ export default function LearnMore() {
             </p>
             <p className="text-center text-[#FFE500]">Join us on all socials</p>
             <div className="flex items-center gap-4">
-              <Link target="_blank" href={"https://t.me/rewardtokenBSC"} className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
+              <Link
+                target="_blank"
+                href={"https://t.me/rewardtokenBSC"}
+                className="py-3 px-4 rounded-lg bg-[#FFE500] text-black"
+              >
                 <TbBrandTelegram />
               </Link>
-              <Link target="_blank" href={"https://x.com/rewardtokenRWD"} className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
+              <Link
+                target="_blank"
+                href={"https://x.com/rewardtokenRWD"}
+                className="py-3 px-4 rounded-lg bg-[#FFE500] text-black"
+              >
                 <TbBrandX />
               </Link>
-              <Link target="_blank" href={"https://discord.gg/GYmSuJa63E"} className="py-3 px-4 rounded-lg bg-[#FFE500] text-black">
+              <Link
+                target="_blank"
+                href={"https://discord.gg/GYmSuJa63E"}
+                className="py-3 px-4 rounded-lg bg-[#FFE500] text-black"
+              >
                 <TbBrandDiscord />
               </Link>
             </div>

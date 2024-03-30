@@ -18,7 +18,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative  overflow-y-hidden  pb-20 pt-10 lg:pt-0  md:py-0">
+    <div className="relative  overflow-y-hidden  pb-20 pt-10 lg:pt-0 md:pt-20  md:py-0">
       <div className="flex lg:flex-row flex-col justify-between container lg:pl-20 md:pl-[6rem] px-6 items-center md:h-full h-[80%]">
         <div
           data-aos="fade-up"

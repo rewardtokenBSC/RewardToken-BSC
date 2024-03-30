@@ -22,8 +22,8 @@ export default function About() {
         </p>
         <div>
           <a
-            href="/whitepaper.pdf" // Replace this with the actual path to your white paper PDF
-            download="whitepaper.pdf"
+            href="/whitepaper"
+            target="_blank"
             className="py-3 px-6 rounded-lg bg-[#FFE500] text-black"
           >
             White Paper
@@ -34,15 +34,15 @@ export default function About() {
         <img
           data-aos="fade-left"
           src="/hand.png"
-          className="z-[900] h-[250px] mt-10 hidden lg:block relative"
+          className="z-[900] h-[250px] mt-10  relative"
           alt=""
         />
-        <img
+        {/* <img
           data-aos="fade-left"
           src="/hand.png"
           className="z-[900] h-[140px] absolute  left-10 lg:hidden block"
           alt=""
-        />
+        /> */}
         {/* <img data-aos="fade-left" src="/md-rect.svg" className="z-[1000] lg:hidden block relative" alt="" /> */}
       </div>
     </div>
