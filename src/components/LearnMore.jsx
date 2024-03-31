@@ -38,7 +38,7 @@ export default function LearnMore() {
               target="_blank"
               className="py-3 px-6 rounded-lg bg-[#FFE500] text-black"
             >
-              Read whitepaper
+              Read Whitepaper
             </a>
           </div>
           <div
