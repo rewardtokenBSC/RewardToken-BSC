@@ -56,11 +56,11 @@ export default function LearnMore() {
               store for the future.
             </p>
             <a
-              href="/RewardRoadMap.pdf" // Replace this with the actual path to your white paper PDF
-              download="RewardRoadMap.pdf"
+              href="/roadmap"
+              target="_blank"
               className="py-3 px-6 rounded-lg bg-[#FFE500] text-black"
             >
-              Download
+              Read Roadmap
             </a>
           </div>
           <div
