@@ -89,7 +89,7 @@ export default function LearnMore() {
               </Link>
               <Link
                 target="_blank"
-                href={"https://discord.gg/GYmSuJa63E"}
+                href={"https://discord.gg/3U7uku5bF8"}
                 className="py-3 px-4 rounded-lg bg-[#FFE500] text-black"
               >
                 <TbBrandDiscord />
