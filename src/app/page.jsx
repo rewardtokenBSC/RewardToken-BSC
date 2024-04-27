@@ -64,12 +64,6 @@ export default function Home() {
             className="lg:h-[500px] h-[250px] pt-10 w-auto"
             alt=""
           />
-          {/* <img
-            src="/tablet.svg"
-            className=" lg:hidden md:block hidden"
-            alt=""
-          />
-          <img src="/mobile.svg" className="md:hidden block" alt="" /> */}
         </div>
         <GetStarted />
         cnter
@@ -81,13 +75,7 @@ export default function Home() {
         <p className="text-[#FFE500]">
           Reward token © 2024 All Rights Reserved.
         </p>
-        {/* <div className="flex items-center text-white justify-center gap-2">
-          <pre className="text-lg font-medium">&lt;!-- Contact AdamBitcoin.CEB3@gmail.com --&gt;</pre>
-        </div> */}
       </div>
-
-
-      {/* Contact AdamBitcoin.CEB3@gmail.com  */}
     </section>
   );
 }
