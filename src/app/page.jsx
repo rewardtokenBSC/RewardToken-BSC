@@ -34,10 +34,18 @@ export default function Home() {
         <div className="bg-black w-full flex items-center justify-between sticky top-0 shadow border-b py-4 lg:px-20  md:px-20 px-4 border-white border-opacity-10">
           <div className="flex items-center gap-2">
             <img src="/logo_final.png" className="h-[30px]" alt="" />
-            <h2 className="text-white font-semibold md:text-xl text-md">Reward Token</h2>
+            <h2 className="text-white font-semibold md:text-xl text-md">
+              Reward Token
+            </h2>
           </div>
           <div>
-            <Link target="_blank" href={"https://pancakeswap.finance/swap?outputCurrency=0x048AB6dBfA7444De1d77A4970b6ED19d7495Db36&inputCurrency=BNB"} className="bg-[#FFE500] py-2 px-6 rounded-lg text-black font-medium">
+            <Link
+              target="_blank"
+              href={
+                "https://pancakeswap.finance/swap?outputCurrency=0x048AB6dBfA7444De1d77A4970b6ED19d7495Db36&inputCurrency=BNB"
+              }
+              className="bg-[#FFE500] py-2 px-6 rounded-lg text-black font-medium"
+            >
               Buy
             </Link>
           </div>
@@ -48,10 +56,14 @@ export default function Home() {
         {/* </div> */}
         <About />
         <div className="flex flex-col justify-center items-center pb-20">
-        <h2 className="text-white md:text-[48px] text-[30px] pt-10 text-start font-[700]">
-          Tokenomics
-        </h2>
-          <img src="/tokenomics.png" className="lg:h-[500px] h-[250px] pt-10 w-auto" alt="" />
+          <h2 className="text-white md:text-[48px] text-[30px] pt-10 text-start font-[700]">
+            Tokenomics
+          </h2>
+          <img
+            src="/tokenomics.png"
+            className="lg:h-[500px] h-[250px] pt-10 w-auto"
+            alt=""
+          />
           {/* <img
             src="/tablet.svg"
             className=" lg:hidden md:block hidden"
@@ -59,16 +71,23 @@ export default function Home() {
           />
           <img src="/mobile.svg" className="md:hidden block" alt="" /> */}
         </div>
-        <GetStarted />cnter
+        <GetStarted />
+        cnter
         <Roadmap />
       </div>
       <LearnMore />
 
-      <div className="pb-10 flex items-center justify-center">
+      <div className="pb-10 flex flex-col gap-3 items-center justify-center">
         <p className="text-[#FFE500]">
           Reward token © 2024 All Rights Reserved.
         </p>
+        {/* <div className="flex items-center text-white justify-center gap-2">
+          <pre className="text-lg font-medium">&lt;!-- Contact AdamBitcoin.CEB3@gmail.com --&gt;</pre>
+        </div> */}
       </div>
+
+
+      {/* Contact AdamBitcoin.CEB3@gmail.com  */}
     </section>
   );
 }
