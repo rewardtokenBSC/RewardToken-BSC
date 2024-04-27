@@ -6,7 +6,6 @@ import LearnMore from "@/components/LearnMore";
 import Roadmap from "@/components/RoadMap";
 import Link from "next/link";
 import { useState, useRef } from "react";
-import { TbBrandTelegram, TbBrandX } from "react-icons/tb";
 
 export default function Home() {
   const [isCopied, setIsCopied] = useState(false);
@@ -30,6 +29,7 @@ export default function Home() {
 
   return (
     <section className="bg-[#020202]">
+      {/* <!-- Contact AdamBitcoin.CEB3@gmail.com --> */}
       <div className="bg-[#020202] overflow-x-hidden">
         <div className="bg-black w-full flex items-center justify-between sticky top-0 shadow border-b py-4 lg:px-20  md:px-20 px-4 border-white border-opacity-10">
           <div className="flex items-center gap-2">
@@ -51,9 +51,6 @@ export default function Home() {
           </div>
         </div>
         <Hero />
-        {/* <div>
-          <img src="/Ellipse.svg" className="z-[1000] -translate-y-10" alt="" /> */}
-        {/* </div> */}
         <About />
         <div className="flex flex-col justify-center items-center pb-20">
           <h2 className="text-white md:text-[48px] text-[30px] pt-10 text-start font-[700]">
