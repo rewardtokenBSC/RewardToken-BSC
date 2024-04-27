@@ -82,7 +82,9 @@ export default function Home() {
           Reward token © 2024 All Rights Reserved.
         </p>
         <div className="flex items-center text-white justify-center gap-2">
-          <pre className="text-lg font-medium">&lt;!-- Contact AdamBitcoin.CEB3@gmail.com --&gt;</pre>
+         {/* <pre className="text-lg font-medium">&lt;!-- Contact AdamBitcoin.CEB3@gmail.com --&gt;</pre> */}
+
+<Link href="/    https://github.com/rewardtokenBSC/RewardToken-BSC/blob/main" classname="underline">https://github.com/rewardtokenBSC/RewardToken-BSC/blob/main</Link>
         </div>
       </div>
     </section>
