@@ -84,7 +84,7 @@ export default function Home() {
         <div className="flex items-center text-white justify-center gap-2">
          {/* <pre className="text-lg font-medium">&lt;!-- Contact AdamBitcoin.CEB3@gmail.com --&gt;</pre> */}
 
-<Link href="http://GitHub.com/rewardtokenBSC" classname="underline text-[#FFE500]">Github</Link>
+<Link href="http://GitHub.com/rewardtokenBSC" classname="underline text-[#FFE500]">Link: <span classname="underline text-[#FFE500]">Github</span></Link>
         </div>
       </div>
     </section>
