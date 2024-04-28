@@ -85,8 +85,7 @@ export default function Home() {
          {/* <pre className="text-lg font-medium">&lt;!-- Contact AdamBitcoin.CEB3@gmail.com --&gt;</pre> */}
 
 <Link href="http://GitHub.com/rewardtokenBSC" classname="underline ">
-  Github
-  <p className="text-[#FFE500] font-semibold text-center">
+  <p className="underline font-semibold text-center">
           Github
         </p>
 </Link>
